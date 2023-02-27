@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Homepage!{% endblock %}
+
+{% block body %}
+<h1>External</h1>
+	<div>Name : {{ data.features.0.properties.name }}</div>
+	<div>PostCode : {{ data.features.0.properties.postcode }}</div>
+	<div>city : {{ data.features.0.properties.city }}</div>
+	<div>longitude : {{ data.features.0.geometry.coordinates.0 }}</div>
+	<div>latitude : {{ data.features.0.geometry.coordinates.1 }}</div>
+{% endblock %}

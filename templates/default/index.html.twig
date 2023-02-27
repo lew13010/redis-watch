@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Homepage!{% endblock %}
+
+{% block body %}
+<h1>Hello World</h1>
+	<div>
+		<a href="{{ path('app_register') }}">Register</a>
+		<a href="{{ path('app_login') }}">Login</a>
+		<a href="{{ path('app_logout') }}">Logout</a>
+	</div>
+	<div>
+		<a href="{{ path('external') }}">External</a>
+	</div>
+{% endblock %}
